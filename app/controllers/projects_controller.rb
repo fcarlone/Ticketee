@@ -23,15 +23,15 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    # @project = Project.find(params[:id])
+    @project = Project.find(params[:id])
   end
 
   def edit
-    # @project = Project.find(params[:id])
+    @project = Project.find(params[:id])
   end
 
   def update
-    # @project = Project.find(params[:id])
+    @project = Project.find(params[:id])
 
     if @project.update(project_params)
       flash[:notice] = "Project has been updated."
@@ -43,7 +43,7 @@ class ProjectsController < ApplicationController
   end
 
   def destroy
-    # @project = Project.find(params[:id])
+    @project = Project.find(params[:id])
     @project.destroy
 
     flash[:notice] = "Project has been deleted."
