@@ -58,7 +58,7 @@ class ProjectsController < ApplicationController
 
   # rescue ActiveRecored::RecordNotFound error
   def set_project
-    @project = Project.find(params[:id]) #can now remove this line of code from show, edit, update and destroy
+    @project = Project.find(params[:id]) #can remove this line of code from show, edit, update and destroy
   rescue ActiveRecord::RecordNotFound
     flash[:alert] = "The project you were looking for could not be found."
     redirect_to projects_path
