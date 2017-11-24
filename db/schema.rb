@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20171121220102) do
   end
 
   create_table "tickets", force: :cascade do |t|
-    t.string   "name"
+    t.string   "title"
     t.text     "description"
     t.integer  "project_id"
     t.datetime "created_at",  null: false

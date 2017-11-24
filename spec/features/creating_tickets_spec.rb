@@ -9,7 +9,7 @@ RSpec.feature "Users can create new tickets" do
   end
 
   scenario "with valid attributes" do
-    fill_in "Name", with: "Non_standards compliance"
+    fill_in "Title", with: "Non_standards compliance"
     fill_in "Description", with: "My pages are ugly!"
     click_button "Create Ticket"
 
